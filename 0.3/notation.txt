@@ -1,0 +1,45 @@
+
+question 1
+nbre de badge = nbre de points
+
+question 2
+nbre de point = nbre de points
+
+question 3
+ nombre de skill = nbre de points 
+
+question 4 
+A > +5
+B > 0
+c > -2
+
+question 5 
+ paris 8 > 47.1% > 4.7 pts
+ nante 7 > 41.1% > 4.1 pts
+ bdx 2   > 11.8% > 1.2 pts
+
+question 6 
+ tout ce qui est juste +5 sinon 0 et si nombre ou saisi invalide -2
+
+question 7 
+ entre 1 et 2 > -2
+ entre 3 et 4 > -1
+ entre 5 et 6 > 0
+ entre 7 et 8 > 3
+ entre 9 et 12 > 4
+ entre 13 et 14 > 1
+ entre 15 et 16 > 0
+ si 17 ou plus -3
+
+question 8
+ 
+ a b c +1
+ d et e -1
+
+ question 9
+ A > -1 
+ B > 0 
+ C > +3
+ D > +1
+
+ question 10
