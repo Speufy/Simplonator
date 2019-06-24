@@ -1,27 +1,33 @@
 
-question 1
-nbre de badge = nbre de points
+QUESTION 1
+Nbr badges /10 = Score           
 
-question 2
-nbre de point = nbre de points
+// Comme ça, 60 badges, le minimum, donnerait 6 points. Ca permet de le ramener à une échelle de grandeur comparable aux skills
 
-question 3
- nombre de skill = nbre de points 
+QUESTION 2                    
+Nbr points /50 = Score
 
-question 4 
+// Pareil c'est pour le ramener à une échelle de grandeur comparable. Sinon en fait le nombre de skills ne compte quasiment pas. Tu peux en avoir fini 3 ou 7 au final ca ferait aucune différence. En fait si on réduis pas les points de 1 et 2 elles écrasent toutes les autres
+
+QUESTION 3
+Nbr de skills = Score
+
+QUESTION 4 
 A > +5
 B > 0
 c > -2
 
-question 5 
+QUESTION 5 
  paris 8 > 47.1% > 4.7 pts
  nante 7 > 41.1% > 4.1 pts
  bdx 2   > 11.8% > 1.2 pts
+ 
+ // On utilise checkboxes plutôt que radio ? Comme ca ça permet de représenter le fait que certains sont mobiles et ont pu candidater sur plusieurs villes pour augmenter leurs chances
 
-question 6 
+QUESTION 6 
  tout ce qui est juste +5 sinon 0 et si nombre ou saisi invalide -2
 
-question 7 
+QUESTION 7 
  entre 1 et 2 > -2
  entre 3 et 4 > -1
  entre 5 et 6 > 0
@@ -31,15 +37,17 @@ question 7
  entre 15 et 16 > 0
  si 17 ou plus -3
 
-question 8
- 
- a b c +1
- d et e -1
+QUESTION 8
+a b c +1
+d et e -1
 
- question 9
+ QUESTION 9
  A > -1 
  B > 0 
  C > +3
  D > +1
 
- question 10
+ QUESTION 10
+ 
+ On transforme le chiffre fétiche en un facteur chance qui permet de passer de justesse (jusqu'à +10% au score) ou malchance (-10%)
+ 

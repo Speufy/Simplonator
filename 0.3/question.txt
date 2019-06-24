@@ -1,8 +1,8 @@
-1) nombre de badge, 
-2) nombre de point 
-3) nombre de chapitres
-4) un extrait de code a verifié (qcm) 
-5) la ville choisi
+1) nombre de badges 
+2) nombre de points 
+3) nombre de skills
+4) un extrait de code à verifier (qcm) 
+5) la ville choisie
 6) quel element fait reference a simpon dans la table de mendel xDD Simplon => Silicium
 7)combien d'heure de code êtes vous prêt à faire par jour?
 8)"vous venez de passer 2 heures à essayer de comprendre pourquoi votre code ne marche pas. 
