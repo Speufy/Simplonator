@@ -1,0 +1,25 @@
+1) nombre de badge, 
+2) nombre de point 
+3) nombre de chapitres
+4) un extrait de code a verifié (qcm) 
+5) la ville choisi
+6) quel element fait reference a simpon dans la table de mendel xDD Simplon => Silicium
+7)combien d'heure de code êtes vous prêt à faire par jour?
+8)"vous venez de passer 2 heures à essayer de comprendre pourquoi votre code ne marche pas. 
+Que faites-vous ? 
+	A) je continue à chercher, c'est pas un bout de code qui me fait peur 
+	B) je vais demander sur discord 
+	C) je vais chercher sur google 
+	D) je passe à l'exercice suivant 
+	E) je retenterai ma chance l'année prochaine"
+
+9)question suivante : 
+"vous découvrez finalement que vous aviez simplement oublié un ; dans votre code. 
+Que faites-vous ? 
+	A) vous jurez comme un charretier en fustigeant ceusses qui ont instauré 
+l'obligation du point virgule dans leur langage 
+	B) vous ouvrez une bière pour fêter ça 
+	C) vous écrivez un post-it PENSE AUX ; que vous collez sur votre écran 
+	D) vous passez à l'exercice suivant
+
+10) ton nombre fetiche.

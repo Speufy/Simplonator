@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+        <title>Simplonator</title>
+        <link rel="stylesheet" href="simplonator.css" type="text/css">
+
+       
+    </head>
+<script src="https://code.jquery.com/jquery-1.12.3.js"   integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+ <script src="JQ/simplonJQ.js"></script>
+ <script src="JS/simplonJS.js"></script>
+    <body>
+
+        <div class="Title">
+            <h1>Simplonator</h1>
+            <p> Bienvenue sur cette page magique qui va prédire si vous allez être séléctionné pour la formation !<br>Renseignez les informations ci dessous et laissez la magie opérer !<br><br>
+ <h3 id="clt">Commencer le test</h3></p>
+        </div>
+
+        <div class="Form">
+
+            <form id="simplonform">
+
+	    <div id="Qu1" class="ask">
+                    <section class="question1">
+                <label for="Q1">Combien de badges avez vous ?</label><br>
+                <input type="number" id="Q1" ><br><br><br><br>
+			<h3 id="qs12"> Question suivante</h3>
+                    </section>
+	    </div><!-- qu1 -->
+
+	    <div id="Qu2" class="ask">
+                <label for="Q2">Combien de points avez vous obtenus ?</label><br>
+                <input type="number" id="Q2"><br><br><br><br>
+			<h3 id="qs23">Question suivante</h3>
+	    </div><!-- qu2 -->
+
+	    <div id="Qu3" class="ask">            
+                <label for="Q3">Combien de cours avez vous terminé ?</label><br>
+                <input type="number" id="Q3"><br><br><br><br>
+			<h3 id="qs34">Question suivante</h3>
+	    </div><!-- qu3 -->
+
+	    <div id="Qu4" class="ask">
+                <p>Que fait le code ci dessous ? :<br>function tourDeMagie("lapin"){<br>if (tourDeMagie =="lapin")<br>console.log("Un lapin sort du chapeau")<br>}</p>
+
+                <input type="radio" id="R4A" name="reponses4" >
+                <label for="reponseA"> Elle n'affiche rien, il y a une erreur</label><br>
+                <input type="radio" id="R4B" name="reponses4">
+                <label for="reponseB"> Elle affiche dans la console: Un lapin sort du chapeau </label><br>
+                <input type="radio" id="R4C" name="reponses4">
+                <label for="reponseC"> on invoque la fonction tourDeMagie avec l'argument "lapin" et si "lapin" est en arguement de celle ci la console affiche : Un lapin est sorti du chapeau</label><br><br>
+			<h3 id="qs45">Question suivante</h3>
+	    </div><!-- qu4 -->
+                
+	    <div id="Qu5" class="ask">
+                <label for="Q5">Pour quelle ville avez vous postulez</label>
+                <select name="Q5">
+                    <option value="Bordeaux">Bordeaux</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Nantes">Nantes</option>
+                </select><br><br><br><br><br>
+			<h3 id="qs56">Question suivante</h3>
+	    </div><!-- qu5 -->
+
+	    <div id="Qu6" class="ask">
+                <label for="Q6">Si Simplon devait se traduire par un élément de table de Mendeleïv, lequel serait-il ?</label><br>
+                <textarea id="Q6" name="R6" rows="1" cols="30"></textarea><br><br><br><br><br>
+			<h3 id="qs67">Question suivante</h3>
+	    </div><!-- qu6 -->
+
+	    <div id="Qu7" class="ask">
+                <label for="Q7">Combien d'heure de code êtes vous prêt à faire par jour ?</label><br>
+                <span>0</span>
+                <input type="range" id="Q7" value="12" min="0" max="24">
+                <span>24</span><br><br><br><br>
+			<h3 id="qs78">Question suivante</h3>
+	    </div><!-- qu7 -->
+
+	    <div id="Qu8" class="ask">
+                <p>Vous venez de passer 2 heures à essayer de comprendre pourquoi votre code ne marche pas. Que faites-vous ?</p><br>
+                <input type="checkbox" id="R8A" name="reponses8">
+                <label for="R8A"> je continue à chercher, c'est pas un bout de code qui me fait peur</label><br>
+                <input type="checkbox" id="R8B" name="reponse8">
+                <label for="R8B"> je vais demander sur discord </label><br>
+                <input type="checkbox" id="R8C" name="reponse8">
+                <label for="R8C"> je vais chercher sur google</label><br>
+                <input type="checkbox" id="R8D" name="reponse8">
+                <label for="R8D">je passe à l'exercice suivant</label><br>
+                <input type="checkbox" id="R8E" name="reponse8">
+                <label for="R8E">je retenterai ma chance l'année prochaine</label><br><br><br><br>
+			<h3 id="qs89">Question suivante</h3>
+	    </div><!-- qu8 -->
+                
+	    <div id="Qu9" class="ask">
+                <p>Vous découvrez finalement que vous aviez simplement oublié un ";" dans votre code. Que faites-vous ?</p>
+                <input type="checkbox" id="R9A" name="reponse9">
+                <label for="R9A"> vous jurez comme un charretier en fustigeant ceusses qui ont instauré l'obligation du point virgule dans leur langage</label>
+                <br>
+                <input type="checkbox" id="R9B" name="reponse9">
+                <label for="R9B">vous ouvrez une bière pour fêter ça</label>
+                <br>
+                <input type="checkbox" id="R9C" name="reponse9">
+                <label for="R9C">vous écrivez un post-it "PENSES AUX <strong>;</strong>" que vous collez sur votre écran</label>
+                <br>
+                <input type="checkbox" id="R9D" name="reponse9">
+                <label for="R9D">vous passez à l'exercice suivant</label>
+                <br><br><br><br><br>
+			<h3 id="qs910">Question suivante</h3>
+	    </div><!-- qu9 -->
+
+	    <div id="Qu10" class="ask">                
+                <label for="Q10">Quel est votre numéro fétiche ?</label><br>
+                <input type="number" name="Q10" step="any" >
+                <br><br><br><br><br><br>
+
+                <button id="submit"> Submit </button>
+	    </div><!-- qu10 -->
+
+           </form>    
+        </div><!-- form -->
+
+     
+
+
+    <footer>
+
+    </footer>
+
+    </body>
+</html>

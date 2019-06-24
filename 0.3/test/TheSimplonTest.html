@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+    <title>The SIMPLON Test</title>
+  </head>
+  <body>
+    <section id="formsection">
+
+        <form id="simplonform" >     <!--  action="/example.html" method="POST" -->   <!-- penser à changer le champ action -->
+
+            <input type="text" name="username">
+            <br/>  
+
+            <label for="badges"> Number of badges: </label>
+            <input id="badges" name="badges" type="number" step="1">
+            <br/>
+
+            <label for="points"> Number of points: </label>
+            <input id="points" name="points" type="number" step="1">
+            <br/>
+
+            <label for="chapters"> Number of chapters: </label>
+            <input id="chapters" name="chapters" type="number" step="1">
+            <br/>
+
+            <!-- Code à verifier sous forme de QCM : USE RADIO. On laisse le js se charger de déterminer comment traduire la case cochée en un 'true' ou un 'false' -->
+
+            <!--  Ville => plus de place plus de points : USE CHECKBOXES, puisqu'on peut tout à fait candidater sur plusieurs villes -->
+
+            <!-- Simplon sur la table de mendel => true or false : OPTION 1 : USE TEXT // OPTION 2 USE RADIO -->
+
+            <!-- QUESTION : que faites vous (4 réponses)          USE RADIO -->
+
+            <!-- Quel est votre nombre fétiche ?            Là je ne sais pas bien. utiliser un type=number, meme avec des steps de 0.01, ne laisse pas assez 
+                                                            de liberté à l'utilisateur, qui doit pouvoit choisir π ou √2 s'il le veut. -->
+            <button id="submit"> Submit </button>
+
+        </form>
+    
+       
+    </section>  <!-- close formsection -->
+
+    <section id="formtreatment">
+            <script type="text/javascript">
+
+              let form = document.getElementById('simplonform');
+
+              form.onsubmit = function(e) {
+                e.preventDefault();
+                console.log(form.username.value);
+                let username = form.username.value;
+
+                document.getElementById("outputName").innerText = username;
+              }
+
+
+
+
+            </script>
+
+
+
+
+
+       <p>Your name is <span id="outputName">_____</span>.</p>
+       <p>You obtained <span id="outputBadges">__</span> badges, netting <span id="outputPoints">__</span> points, and finished <span id="outputChapters">__</span> chapters. Congratulations ! </p> 
+       <p>We will analyse that data and let you know if you are Simplon-worthy.</p>  
+
+    </section>
+
+
+
+  </body>
+</html>
