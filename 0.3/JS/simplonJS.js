@@ -1,9 +1,9 @@
  
     let form = document.getElementById('simplonform');
-    let send = document.getElementById('submit');
-    
 
-    send.addEventListener('click',message1);
+if (typeof send !== 'undefined') {
+    let send = document.getElementById('submit');
+    send.addEventListener('click',message1);}
     
     function message1(){
         let R1 = form.Q1.value; //nbre de badge
