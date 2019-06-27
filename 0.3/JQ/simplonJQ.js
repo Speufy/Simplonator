@@ -57,3 +57,11 @@ $(function(){
       $('#Qu10').toggle(500)
 	});	
 });
+
+$(function() {
+	$('.heure').next().text('--'); // Valeur par défaut
+	$('.heure').on('input', function() {
+		var $set = $(this).val();
+		$(this).next().text($set);
+	});
+});
