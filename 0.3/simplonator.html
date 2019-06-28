@@ -9,7 +9,11 @@
     </head>
 <script src="https://code.jquery.com/jquery-1.12.3.js"   integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
  <script src="JQ/simplonJQ.js"></script>
- <script src="JS/simplonJS.js"></script>
+<!-- <script src="JS/simplonJS.js"></script>           Je déplace cette partie plus bas pour tenter de régler le problème de l'EventListener qui ne marche pas.
+                                                        En effet, il se pourrait que l'on attribue une valeur a send trop tôt, avant que la page ne se soit chargée. 
+                                                        Ce qui expliquerait pourquoi send vaut undefined et que du coup rien ne marche 
+
+                                                        (d'après google : https://stackoverflow.com/questions/26107125/cannot-read-property-addeventlistener-of-null/30063375) -->
     <body>
 
         <div class="Title">
@@ -115,7 +119,7 @@
                 <input type="number" name="Q10" step="any" >
                 <br><br><br><br><br><br>
 
-                <button id="submit"> Submit </button>
+                <button id="submit" type ="button"> Submit </button>
 	    </div><!-- qu10 -->
 
            </form>    
@@ -125,7 +129,7 @@
 
 
     <footer>
-
+	<script src="JS/simplonJS.js"></script> <!-- c'pas super propre mais voyons si ça marche -->
     </footer>
 
     </body>
