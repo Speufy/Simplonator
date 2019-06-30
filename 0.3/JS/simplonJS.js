@@ -239,7 +239,37 @@
 
          console.log(`Score final : ${scoreFinal}`);
      
-     
+         let displayData = (nbrbadges, nbrpoints, nbrchapters)=>{
+
+                   document.getElementById("outputBadges").innerText = nbrbadges;
+                   document.getElementById("outputPoints").innerText = nbrpoints;
+                   document.getElementById("outputChapters").innerText = nbrchapters;
+
+                   if(nbrbadges*nbrpoints*nbrchapters == 0){
+                     document.getElementById("recap").innerText ="Il ne vous manque pas quelque chose ? Vérifiez que vous avez bien validé au moins 1 badge, 1 point et 1 chapitre"
+                   }
+
+                   document.getElementById("RDA_Text").innerText ="Résultat de l'assessment : " 
+                  } 
+
+           setTimeout(displayData, 1200, R1, R2, R3); 
+
+
+             let isAccepted = (score)=>{
+               if(score >= 15){return true;}
+               else return false;
+             }
+
+           setTimeout(writeResult, 4000, isAccepted(scoreFinal));
+
+             function writeResult(isAccepted){
+                     if(isAccepted == true){
+                       document.getElementById("RDA_Text").innerText +=" Vous êtes retenu ! Extra !" 
+                     } else {
+                       document.getElementById("RDA_Text").innerText +=" Malheureusement, votre candidature n'a pas été retenue." 
+                     }
+
+                 }
      
 
 
