@@ -1,5 +1,5 @@
  
-    let form = document.getElementById('simplonform'); // parait optionnel, on devrait pouvoir le retirer ?
+    let form = document.getElementById('simplonform'); 
 
 // retiré : if (typeof send !== 'undefined') {                 RAISON : send est défini dans ce bloc, donc il faut qu'il soit defini avant de pouvoir être defini, et donc il ne pourra jamais être defini.
 // on pourrait éventuellement le remettre après la ligne ci dessous, mais avant celle qui suit. Cela me parait optionnel pour le moment.
@@ -176,6 +176,71 @@
          let totalScoreBeforeFetiche = r123pts(R1, R2, R3) + r4pts(R4A, R4B, R4C) + r5pts(R5) + r6pts(R6) + r7pts(R7) + r8pts(R8a, R8b, R8c, R8d, R8e) + r9pts(R9a, R9b, R9c, R9d);
 
          console.log(`Score avant application du nombre fétiche : ${totalScoreBeforeFetiche}`);
+     
+         let luckyNumberMagic = (R10, score)=>{    
+                    console.log(`R10 : ${R10}`);
+                    // transforme le nombre fétiche en nombre compris entre 0 et 1.
+
+                    let isLNnegative = false;
+
+
+
+                    // si le nombre fétiche est négatif
+                    if(R10<0){
+                      // on garde en mémoire qu'il était négatif
+                      isLNnegative = true;
+                      // on le converti en positif
+                      R10 = -R10;
+                    }
+
+                    // on divise le nombre fétiche par 10 autant de fois que nécessaire pour qu'il soit compris entre 0 et 1
+                    while(R10>1){
+                      R10= R10/10;
+
+                    }  
+
+
+
+                    // on transforme le nombre fétiche en un nombre, entre 0 et 1 qui parait aléatoire, mais ce résultat est en réalité propre au chiffre fétiche choisi.
+
+                    // on commence par définir une fonction logistique avec  µ = 4 (valeur maximale possible, supérieure à 3.57 donc permettant d'obtenir un comportement chaotique sans attracteur) => https://fr.wikipedia.org/wiki/Suite_logistique
+                    // j'ai l'air d'un matheux comme ça mais en vrai je traine juste trop sur youtube. => https://youtu.be/YrOyRCD7M14?t=596
+
+                    let logistique = (x)=>{ return ((4*x)*(1-x));}
+
+                    // ensuite, on fait passer le nombre fétiche un grand nombre de fois dedans. Ce nombre sera un peu plus grand pour les nombre fétiches négatifs afin qu'ils ne donnenet pas le même résultat que leur homologue positif
+
+                    let N=16
+                    if(isLNnegative){N=20;}
+
+                    for(i=0; i<N; i++){
+                      R10 = logistique(R10);
+                    }
+
+
+
+                    // on modifie légèrement le score (+ ou - 10%) en fonction du nombre fétiche. 
+                    // Un nombre fétiche, qui, transformé, est proche de 0, représentera un nombre malchanceux qui fait perdre jusqu'à 10% de score. 
+                    // Et inversement, un nombre fétiche, qui, transformé, est proche de 1, représentera un nombre chanceux qui fait gagner jusqu'à 10% de score. 
+
+                    R10=R10-0.5; // R10 vaut maintenant entre -0.5 et 0.5
+
+
+                    R10=1+(R10/5); // R10 vaut maintenant entre 0.9 et 1.1
+
+
+                    return (score*R10); // on renvoie le nouveau score du candidat
+
+
+             }
+
+         let scoreFinal = luckyNumberMagic(R10, totalScoreBeforeFetiche);
+
+
+         console.log(`Score final : ${scoreFinal}`);
+     
+     
+     
 
 
 
