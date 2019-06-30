@@ -57,3 +57,10 @@ $(function(){
       $('#Qu10').toggle(500)
 	});	
 });
+
+$(function(){
+   $('#submit').click(function(){
+      $('#result').toggle(500)
+   });   
+});
+
